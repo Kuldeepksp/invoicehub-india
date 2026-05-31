@@ -3,10 +3,10 @@ import { useState, useRef } from "react";
 // ─── Utilities ────────────────────────────────────────────────────────────────
 const uid = () => Math.random().toString(36).slice(2, 8);
 const toDay = () => new Date().toISOString().slice(0, 10);
-const toINR = n => "₹" + Number(n || 0).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const toN = n => Number(n || 0).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const toINR = (n: any) => "₹" + Number(n || 0).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const toN = (n: any) => Number(n || 0).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-const calcLine = it => {
+const calcLine = (it: any) => {
   const q = +it.qty || 0, p = +it.price || 0, d = +it.disc || 0, t = +it.tax || 0;
   const taxable = q * p * (1 - d / 100);
   return { taxable, taxAmt: taxable * t / 100, total: taxable * (1 + t / 100), base: q * p, discAmt: q * p * d / 100 };
