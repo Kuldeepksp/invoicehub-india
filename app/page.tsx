@@ -22,7 +22,7 @@ const FAQ = [
   },
   {
     q: "How do I download the invoice as PDF?",
-    a: "Click the 'Download PDF' button. Your browser's print dialog will open — select 'Save as PDF' as the destination.",
+    a: "Click the 'PDF' button — your browser's print dialog opens, then choose 'Save as PDF'. You can also export a fully formatted Excel file using the 'Excel' button.",
   },
   {
     q: "Is my data saved?",
@@ -31,12 +31,12 @@ const FAQ = [
 ];
 
 const FEATURES = [
-  { icon: "⚡", title: "60-Second Invoices", desc: "Fill in your details once, generate invoices in seconds. AI Quick Entry parses plain-text item lists automatically." },
+  { icon: "⚡", title: "Fast Invoicing", desc: "Fill in your details once and generate professional invoices in under a minute. Add unlimited line items with automatic GST calculation." },
   { icon: "🇮🇳", title: "Built for India", desc: "GST-compliant with CGST/SGST/IGST modes, HSN/SAC codes, Indian state selector, and INR formatting." },
-  { icon: "🎨", title: "4 Professional Templates", desc: "Modern Corporate, Minimal Pro, GST Classic, and Warm Indian. Switch templates with one click." },
+  { icon: "🎨", title: "10 Professional Templates", desc: "Ten minimal, GST-compliant designs — Modern, Minimal, Classic, Warm Indian, Monochrome, Slate, Teal, Compact, Letterhead, and Executive. Switch with one click." },
   { icon: "📄", title: "Instant PDF Download", desc: "Print-ready A4 format. No watermark on your business details — just the InvoiceHub footer." },
   { icon: "🔒", title: "Privacy First", desc: "Your data never leaves your browser. No account required, no cloud storage, no tracking." },
-  { icon: "✨", title: "AI Quick Entry", desc: "Type items like '5 chairs ₹2500 each' and AI converts it into invoice line items instantly." },
+  { icon: "📊", title: "Excel & PDF Export", desc: "Download your invoice as a print-ready PDF or a fully formatted Excel spreadsheet with one click." },
 ];
 
 export default function Home() {

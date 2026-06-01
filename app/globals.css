@@ -2,9 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── PRINT: only the invoice (#ih-print) shows; everything else is hidden ── */
 @media print {
   @page { size: A4; margin: 8mm; }
+
+  /* Hide the entire page */
+  body * { visibility: hidden !important; }
+
+  /* Show only the invoice print container and its contents */
+  #ih-print, #ih-print * { visibility: visible !important; }
+
+  /* Position the invoice at the top-left of the printed page */
+  #ih-print {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Keep colors/backgrounds in print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 }
 
-::-webkit-scrollbar { width: 4px; }
+/* Hide the print container on screen */
+#ih-print { display: none; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 2px; }

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "InvoiceHub India — Free GST Invoice Generator",
     description:
-      "Make professional GST invoices in 60 seconds. Free, no signup. CGST/SGST/IGST support, 4 templates, PDF download.",
+      "Make professional GST invoices in 60 seconds. Free, no signup. CGST/SGST/IGST support, 10 templates, PDF & Excel export.",
     url: "https://invoicehub.in",
     siteName: "InvoiceHub India",
     locale: "en_IN",
